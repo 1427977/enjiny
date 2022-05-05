@@ -12,5 +12,5 @@
     $_SESSION['points'] = 0;
 
     $_SESSION['TempsPregunta'] = 0;
-    print_r("hola :)");
+
     require './View/cover.php';
