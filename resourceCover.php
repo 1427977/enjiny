@@ -16,7 +16,7 @@
     </header>
 
     <body>
-        <?php require __DIR__.'/View/cover.php'; ?>
+        <?php require __DIR__.'/Controller/cover.php'; ?>
     </body>
 
     <footer>
