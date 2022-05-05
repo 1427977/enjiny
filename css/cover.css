@@ -1,0 +1,303 @@
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    top: -5px;
+    left: 105%;
+}
+
+/* CSS BOX PAGE */
+body{
+    background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
+}
+
+/* --------------------------- COVER --------------------------- */
+#pantalla_principal{
+    width:400px;
+    height: 300px;
+    padding:16px;
+    margin:auto;
+    background-color: #edca8a;
+    text-align:center;
+    /* Border */
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #a25f38;
+}
+#pantalla_principal button{
+    width: 80%;
+    padding: 8px 80px;
+    border: 1px solid #ce7948;
+    border-radius: 5px;
+    display: block;
+    font-weight: bold;
+    background-color: #ce7948;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+#pantalla_principal button:hover{
+    background-color: #c27244;
+    cursor:pointer;
+}
+
+/* --------------------------- SYLLABARY --------------------------- */
+#pantalla_syllabary{
+    width:400px;
+    height: 300px;
+    padding:16px;
+    margin:auto;
+    background-color: #e5e7ee;
+    text-align:center;
+    /* Border */
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #bfc4ff;
+}
+
+#pantalla_syllabary form input[type="submit"]{
+    width:100%;
+    padding:8px 88px;
+    margin-top:15px;
+    border:1px solid #bfc4ff;
+    border-radius:5px;
+    display:block;
+    color:#000;
+    font-weight: bold;
+    background-color:#bfc4ff;
+}
+
+/* --------------------------- MODE --------------------------- */
+#pantalla_mode{
+    width:400px;
+    height: 400px;
+    padding:16px;
+    margin:auto;
+    background-color: #e5e7ee;
+    text-align:center;
+    /* Border */
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #bfc4ff;
+}
+
+#pantalla_mode form input[type="submit"]{
+    width:100%;
+    padding:8px 88px;
+    margin-top:15px;
+    border:1px solid #bfc4ff;
+    border-radius:5px;
+    display:block;
+    color:#000;
+    font-weight: bold;
+    background-color:#bfc4ff;
+}
+
+/* --------------------------- GAME --------------------------- */
+#pantalla_game{
+    width:500px;
+    height: 450px;
+    padding:5px;
+    margin:auto;
+    background-color: #e5e7ee;
+    /* Border */
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #bfc4ff;
+}
+
+#header{
+    font-size: 20px;
+    display:flex;
+}
+#points{
+    flex: 1 1 auto;
+    text-align: center;
+}
+#questions{
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+#TeclatRM p,#TeclatJP p,#EleccióJP p,#EleccióRM p{
+    text-align:center;
+    font-size:40px;
+}
+
+#pantalla_game form input[type="submit"]{
+    width:100%;
+    padding:8px 88px;
+    margin-top:15px;
+    border:1px solid #bfc4ff;
+    border-radius:5px;
+    display:block;
+    color:#000;
+    font-weight: bold;
+    background-color:#bfc4ff;
+    font-size: 15px;
+}
+
+#pantalla_game form input[type="text"]{
+    width:20%;
+    padding:10px 10px;
+    border:1px solid #bfc4ff;
+    border-radius:5px;
+    display:block;
+    color:#000;
+    font-weight: bold;
+    background-color:#bfc4ff;
+    font-size: 15px;
+}
+
+
+/* --------------------------- RANKING --------------------------- */
+#pantalla_ranking{
+    width:800px;
+    height: 600px;
+    padding:16px;
+    margin:auto;
+    background-color: #d28b27;
+    text-align:center;
+    /* Border */
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #a25f38;
+    display: grid;
+    grid-template-areas: 'rHeader rHeader' 'lRank gRank' 'rFooter rFooter';
+}
+
+/* Grid Area*/
+.pantalla_ranking_header {
+    grid-area: rHeader;
+}
+.local_ranking {
+    grid-area: lRank;
+}
+.global_ranking {
+    grid-area: gRank;
+}
+.pantalla_ranking_footer {
+    grid-area: rFooter;
+}
+
+#pantalla_ranking form input[type="submit"]{
+    width:100%;
+    padding:8px 88px;
+    margin-top:15px;
+    border:1px solid #bfc4ff;
+    border-radius:5px;
+    display:block;
+    color:#000;
+    font-weight: bold;
+    background-color:#bfc4ff;
+}
+
+#pantalla_ranking a {
+    background-color: #ffb686;
+    color: black;
+    border: 2px solid #806332;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#pantalla_ranking p {
+    width:250px;
+    height: 30px;
+    margin:auto;
+    background-color: #e99d2a;
+    /* Border */
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a25f38;
+}
+
+#pos_0 p {
+    width:250px;
+    height: 30px;
+    margin:auto;
+    background-color: #e0e192;
+    /* Border */
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #e4e335;
+}
+
+#pos_1 p {
+    width:250px;
+    height: 30px;
+    margin:auto;
+    background-color: #c3c8cd;
+    /* Border */
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a8a7a4;
+}
+
+#pos_2 p {
+    width:250px;
+    height: 30px;
+    margin:auto;
+    background-color: #e9ab62;
+    /* Border */
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a27545;
+}
+
+#pos_3 p, #pos_4 p {
+    width:250px;
+    height: 30px;
+    margin:auto;
+    background-color: #afe988;
+    /* Border */
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #5aa240;
+}
+
+#pos_5 p, #pos_6 p, #pos_7 p, #pos_8 p, #pos_9 p {
+    width:250px;
+    height: 30px;
+    margin:auto;
+    background-color: #98e99d;
+    /* Border */
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #88a237;
+}
+
+#pos_10 p{
+    width:250px;
+    height: 30px;
+    margin:auto;
+    background-color: #e99186;
+    /* Border */
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a23536;
+}

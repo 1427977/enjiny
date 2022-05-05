@@ -1,0 +1,31 @@
+#menu{
+    position: absolute;
+    left: 70%;
+    top: 0;
+}
+#menu ul {
+    list-style-type: none;
+    overflow: hidden;
+    font-size:20px;
+}
+
+#menu li {
+    float: left;
+    background-color: #e79c4d;
+    border-radius: 15px;
+    border-style: ridge;
+    border-color: #bd6f41;
+}
+
+#menu li a {
+    display: block;
+    color: rgba(36, 35, 37, 1);
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    background-color: #ce7948;
+    border-radius: 15px;
+}
