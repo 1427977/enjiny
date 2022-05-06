@@ -48,6 +48,10 @@ switch($action) {
         include __DIR__.'/resourceLogin.php';
         break;
 
+    case 'profile':
+        include __DIR__.'/resourceProfile.php';
+        break;
+
     default:
         include __DIR__. '/resourceCover.php';
         break;

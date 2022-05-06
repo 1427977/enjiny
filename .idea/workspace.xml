@@ -3,7 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="eb0a14d4-0faa-468d-82a6-24da4a1e7530" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourceCover.php" beforeDir="false" afterPath="$PROJECT_DIR$/resourceCover.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/cover.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/cover.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/mode.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/mode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/syllabary.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/syllabary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/cover.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/cover.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/mode.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/mode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ranking.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/ranking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/syllabary.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/syllabary.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/type.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/type.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_github/workflows/main.yml.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/cover.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/cover.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/user.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesseract/jpn.traineddata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesseract/spa.traineddata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tesseract/tesseract-ocr-w32-setup-v4.1.0.20190314.exe" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +62,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="24CpBterXTwYDyETtN5yT3Ps0d6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -107,6 +129,8 @@
       <workItem from="1651746701084" duration="2555000" />
       <workItem from="1651749542193" duration="2607000" />
       <workItem from="1651754528100" duration="1260000" />
+      <workItem from="1651783614975" duration="327000" />
+      <workItem from="1651833084367" duration="27926000" />
     </task>
     <servers />
   </component>
@@ -125,5 +149,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/View/ranking.php</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -55,6 +55,34 @@
                 $correcte = 0;
             }
         }
+        if (array_key_exists('submit_button5', $_POST)) {
+            if ($_POST["submit_hidden"] == $_POST["submit_button5"]) {
+                $correcte = 1;
+            }else{
+                $correcte = 0;
+            }
+        }
+        if (array_key_exists('submit_button6', $_POST)) {
+            if ($_POST["submit_hidden"] == $_POST["submit_button6"]) {
+                $correcte = 1;
+            }else{
+                $correcte = 0;
+            }
+        }
+        if (array_key_exists('submit_button7', $_POST)) {
+            if ($_POST["submit_hidden"] == $_POST["submit_button7"]) {
+                $correcte = 1;
+            }else{
+                $correcte = 0;
+            }
+        }
+        if (array_key_exists('submit_button8', $_POST)) {
+            if ($_POST["submit_hidden"] == $_POST["submit_button8"]) {
+                $correcte = 1;
+            }else{
+                $correcte = 0;
+            }
+        }
     }
 
     /* CALCULAR PUNTUACIÓ*/
@@ -125,8 +153,8 @@
                 $pos = 0;
                 while($sel1[0]["Selected"] == 1 && $score[0] != 5 && $pos < 5){
                     $_SESSION["randomNumber1"] = rand(0,4);
-                    $sel1 = isSelected($con, $_SESSION['User'], $_SESSION["randomNumber2"] + 1);
-                    $score = searchScore($con, $_SESSION['User'], $_SESSION["randomNumber2"] + 1);
+                    $sel1 = isSelected($con, $_SESSION['User'], $_SESSION["randomNumber1"] + 1);
+                    $score = searchScore($con, $_SESSION['User'], $_SESSION["randomNumber1"] + 1);
                     $pos += 1;
                 }
                 $_SESSION["randomNumber2"] = rand(0,10);
@@ -189,8 +217,8 @@
                 $pos = 0;
                 while($sel1[0]["Selected"] == 1 && $score[0] != 5 && $pos < 5){
                     $_SESSION["randomNumber1"] = rand(0,45);
-                    $sel1 = isSelected($con, $_SESSION['User'], $_SESSION["randomNumber2"] + 1);
-                    $score = searchScore($con, $_SESSION['User'], $_SESSION["randomNumber2"] + 1);
+                    $sel1 = isSelected($con, $_SESSION['User'], $_SESSION["randomNumber1"] + 1);
+                    $score = searchScore($con, $_SESSION['User'], $_SESSION["randomNumber1"] + 1);
                     $pos += 1;
                 }
                 $_SESSION["randomNumber2"] = rand(0,45);

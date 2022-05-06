@@ -1,33 +1,39 @@
 /* Tooltip container */
-.tooltip {
+.tooltip{
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    vertical-align: middle;
+    font-size: 20px;
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltip .tooltiptext{
     visibility: hidden;
-    width: 200px;
-    background-color: black;
-    color: #fff;
+    width: 250px;
+    background-color: #ddcc9f;
+    color: #000000;
     text-align: center;
     padding: 5px 0;
-    border-radius: 6px;
-
+    border: 2px solid #ce7948;
+    border-radius:5px;
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext{
     visibility: visible;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tooltiptext{
     top: -5px;
     left: 105%;
+    text-align: center;
+}
+
+.tooltip img{
+    width: 25px;
 }
 
 /* CSS BOX PAGE */
@@ -35,11 +41,91 @@ body{
     background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
 }
 
+/* ------------------------------------------------------------ */
 /* --------------------------- COVER --------------------------- */
+/* ------------------------------------------------------------ */
 #pantalla_principal{
-    width:400px;
-    height: 300px;
-    padding:16px;
+    width: 550px;
+    height: 450px;
+    margin:auto;
+    background-color: #edca8a;
+    text-align:center;
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #a25f38;
+}
+#pantalla_principal button{
+    width:60%;
+    padding:8px 0px;
+    border: 1px solid #ce7948;
+    border-radius:5px;
+    font-weight: bold;
+    background-color: #ce7948;
+    font-size: 20px;
+}
+#pantalla_principal button:hover{
+    background-color: #c27244;
+    cursor:pointer;
+}
+#pantalla_principal_header{
+    font-size: 40px;
+    font-weight: bold;
+}
+#pantalla_principal_body {
+    font-size: 25px;
+}
+#pantalla_principal_init {
+    font-size: 20px;
+}
+
+/* ------------------------------------------------------------ */
+/* ------------------------ SYLLABARY ------------------------- */
+/* ------------------------------------------------------------ */
+#pantalla_syllabary{
+    width: 500px;
+    height: 450px;
+    margin:auto;
+    background-color: #edca8a;
+    text-align:center;
+    /* Border */
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: #a25f38;
+}
+
+#pantalla_syllabary form input[type="submit"]{
+    width:60%;
+    padding:8px 0px;
+    border: 1px solid #ce7948;
+    border-radius:5px;
+    font-weight: bold;
+    background-color: #ce7948;
+    font-size: 20px;
+}
+#pantalla_syllabary form input[type="submit"]:hover{
+    background-color: #c27244;
+    cursor:pointer;
+}
+
+#pantalla_syllabary_footer{
+    position: absolute;
+    margin-left: 20px;
+}
+
+#pantalla_syllabary_header{
+    font-size: 40px;
+    font-weight: bold;
+}
+#pantalla_syllabary_footer img{
+    width: 40px;
+}
+
+/* ------------------------------------------------------------ */
+/* --------------------------- MODE --------------------------- */
+/* ------------------------------------------------------------ */
+#pantalla_mode{
+    width: 500px;
+    height: 550px;
     margin:auto;
     background-color: #edca8a;
     text-align:center;
@@ -48,143 +134,200 @@ body{
     border-style: ridge;
     border-color: #a25f38;
 }
-#pantalla_principal button{
-    width: 80%;
-    padding: 8px 80px;
+
+#pantalla_mode form input[type="submit"]{
+    width:60%;
+    padding:8px 0px;
     border: 1px solid #ce7948;
-    border-radius: 5px;
-    display: block;
+    border-radius:5px;
     font-weight: bold;
     background-color: #ce7948;
-    margin-left: 40px;
-    margin-right: 30px;
+    font-size: 20px;
 }
-#pantalla_principal button:hover{
+
+#pantalla_mode form input[type="submit"]:hover{
     background-color: #c27244;
     cursor:pointer;
 }
 
-/* --------------------------- SYLLABARY --------------------------- */
-#pantalla_syllabary{
-    width:400px;
-    height: 300px;
+#pantalla_mode_header{
+    font-size: 40px;
+    font-weight: bold;
+}
+#pantalla_mode_footer{
+    position: absolute;
+    margin-left: 20px;
+}
+
+#pantalla_mode_footer img{
+    width: 40px;
+}
+
+.barra {
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 5px;
+    position: relative;
+    background: #dea96a;
+    border-radius: 30px;
+    padding: 5px;
+}
+.barra > span {
+    display: block;
+    height: 90%;
+    background-color: #4f7b0b;
+    position: relative;
+    overflow: hidden;
+    animation: prog 3s linear;
+}
+@keyframes prog {
+    0% {width: 0%}
+    60% {width: 100%}
+}
+
+/* ------------------------------------------------------------ */
+/* --------------------------- TYPE --------------------------- */
+/* ------------------------------------------------------------ */
+#type_mode{
+    width: 500px;
+    height: 500px;
     padding:16px;
     margin:auto;
-    background-color: #e5e7ee;
+    background-color: #edca8a;
     text-align:center;
-    /* Border */
     border-radius:10px;
     border-style: ridge;
-    border-color: #bfc4ff;
+    border-color: #a25f38;
 }
 
-#pantalla_syllabary form input[type="submit"]{
-    width:100%;
-    padding:8px 88px;
-    margin-top:15px;
-    border:1px solid #bfc4ff;
+#type_mode form input[type="submit"]{
+    width:60%;
+    padding:8px 0px;
+    border: 1px solid #ce7948;
     border-radius:5px;
-    display:block;
-    color:#000;
     font-weight: bold;
-    background-color:#bfc4ff;
+    background-color: #ce7948;
+    font-size: 20px;
 }
 
-/* --------------------------- MODE --------------------------- */
-#pantalla_mode{
-    width:400px;
-    height: 400px;
-    padding:16px;
-    margin:auto;
-    background-color: #e5e7ee;
-    text-align:center;
-    /* Border */
-    border-radius:10px;
-    border-style: ridge;
-    border-color: #bfc4ff;
+#type_mode form input[type="submit"]:hover{
+    background-color: #c27244;
+    cursor:pointer;
 }
 
-#pantalla_mode form input[type="submit"]{
-    width:100%;
-    padding:8px 88px;
-    margin-top:15px;
-    border:1px solid #bfc4ff;
-    border-radius:5px;
-    display:block;
-    color:#000;
-    font-weight: bold;
-    background-color:#bfc4ff;
-}
-
+/* ------------------------------------------------------------ */
 /* --------------------------- GAME --------------------------- */
+/* ------------------------------------------------------------ */
 #pantalla_game{
-    width:500px;
+    width: 500px;
     height: 450px;
     padding:5px;
     margin:auto;
-    background-color: #e5e7ee;
-    /* Border */
+    background-color: #edca8a;
     border-radius:10px;
     border-style: ridge;
-    border-color: #bfc4ff;
+    border-color: #a25f38;
 }
 
 #header{
-    font-size: 20px;
     display:flex;
 }
 #points{
     flex: 1 1 auto;
     text-align: center;
+    font-size: 25px;
 }
 #questions{
     flex: 1 1 auto;
     text-align: center;
+    font-size: 25px;
 }
-
+/*
 #TeclatRM p,#TeclatJP p,#EleccióJP p,#EleccióRM p{
     text-align:center;
-    font-size:40px;
+    font-size:80px;
+}
+*/
+
+#title_game{
+    text-align:center;
+    font-size: 80px;
 }
 
+#form_game{
+    display: grid;
+    grid-template-areas: 'sb1 sb2' 'sb3 sb4' 'sb5 sb6' 'sb7 sb8';
+}
+
+/* Grid Area*/
+.submit_button1 {
+    grid-area: sb1;
+}
+.submit_button2 {
+    grid-area: sb2;
+}
+.submit_button3 {
+    grid-area: sb3;
+}
+.submit_button4 {
+    grid-area: sb4;
+}
+.submit_button5 {
+    grid-area: sb5;
+}
+.submit_button6 {
+    grid-area: sb6;
+}
+.submit_button7 {
+    grid-area: sb7;
+}
+.submit_button8 {
+    grid-area: sb8;
+}
 #pantalla_game form input[type="submit"]{
-    width:100%;
-    padding:8px 88px;
-    margin-top:15px;
-    border:1px solid #bfc4ff;
+    width: 70%;
+    padding:8px 0px;
+    border: 1px solid #ce7948;
     border-radius:5px;
-    display:block;
-    color:#000;
     font-weight: bold;
-    background-color:#bfc4ff;
-    font-size: 15px;
+    font-size: 20px;
+    background-color: #ce7948;
+    justify-content: center;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 25px;
+}
+#pantalla_game form input[type="submit"]:hover{
+    background-color: #c27244;
+    cursor:pointer;
 }
 
 #pantalla_game form input[type="text"]{
-    width:20%;
-    padding:10px 10px;
-    border:1px solid #bfc4ff;
+    margin-top: 50px;
+    margin-right: 30%;
+    margin-left: 30%;
+    width: 40%;
+    padding: 8px 0px;
+    border: 1px solid #ce7948;
     border-radius:5px;
-    display:block;
-    color:#000;
     font-weight: bold;
-    background-color:#bfc4ff;
-    font-size: 15px;
+    background-color: #ce7948;
+    font-size: 30px;
+    text-align: center;
 }
 
-
-/* --------------------------- RANKING --------------------------- */
+/* ------------------------------------------------------------ */
+/* -------------------------- RANKING ------------------------- */
+/* ------------------------------------------------------------ */
 #pantalla_ranking{
-    width:800px;
-    height: 600px;
-    padding:16px;
-    margin:auto;
-    background-color: #d28b27;
+    margin-right: 25%;
+    margin-left: 25%;
+    height: 800px;
     text-align:center;
-    /* Border */
     border-radius:10px;
     border-style: ridge;
     border-color: #a25f38;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972185350065750086/unknown.png?width=676&height=676");
     display: grid;
     grid-template-areas: 'rHeader rHeader' 'lRank gRank' 'rFooter rFooter';
 }
@@ -193,111 +336,111 @@ body{
 .pantalla_ranking_header {
     grid-area: rHeader;
 }
+.pantalla_ranking_header h1{
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: #ffd487ff;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a25f38;
+    font-size: 30px;
+    background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
+
+}
+
 .local_ranking {
     grid-area: lRank;
 }
 .global_ranking {
     grid-area: gRank;
 }
+.local_ranking h3, .global_ranking h3{
+    margin-right: 0%;
+    margin-left: 23%;
+    width: 250px;
+    height: 30px;
+    background-color: #ffd487ff;
+    border-style: ridge;
+    border-color: #a25f38;
+    font-size: 25px;
+    background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
+}
+
 .pantalla_ranking_footer {
     grid-area: rFooter;
 }
-
-#pantalla_ranking form input[type="submit"]{
-    width:100%;
-    padding:8px 88px;
-    margin-top:15px;
-    border:1px solid #bfc4ff;
-    border-radius:5px;
-    display:block;
-    color:#000;
-    font-weight: bold;
-    background-color:#bfc4ff;
-}
-
-#pantalla_ranking a {
+.pantalla_ranking_footer a {
     background-color: #ffb686;
     color: black;
     border: 2px solid #806332;
     padding: 10px 20px;
-    text-align: center;
     text-decoration: none;
-    display: inline-block;
-}
-
-#pantalla_ranking p {
-    width:250px;
-    height: 30px;
-    margin:auto;
-    background-color: #e99d2a;
-    /* Border */
-    border-radius:5px;
-    border-style: ridge;
-    border-color: #a25f38;
+    font-weight: bold;
 }
 
 #pos_0 p {
-    width:250px;
-    height: 30px;
-    margin:auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
     background-color: #e0e192;
-    /* Border */
     border-radius:5px;
     border-style: ridge;
-    border-color: #e4e335;
+    border-color: #c8bf34;
+    font-size: 20px;
+    background-image: url("https://img.freepik.com/free-photo/gold-metal-brushed-background_38679-1030.jpg?w=2000");
 }
-
 #pos_1 p {
-    width:250px;
-    height: 30px;
-    margin:auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
     background-color: #c3c8cd;
-    /* Border */
     border-radius:5px;
     border-style: ridge;
     border-color: #a8a7a4;
+    font-size: 20px;
+    background-image: url("https://ae01.alicdn.com/kf/HTB12ijKdNWYBuNjy1zkq6xGGpXav/Fondos-fotogr-ficos-Bokeh-para-ni-os-y-beb-s-con-destellos-plateados-de-vinilo-para.jpg_Q90.jpg_.webp");
 }
-
 #pos_2 p {
-    width:250px;
-    height: 30px;
-    margin:auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
     background-color: #e9ab62;
-    /* Border */
     border-radius:5px;
     border-style: ridge;
     border-color: #a27545;
+    font-size: 20px;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972239638142001273/unknown.png");
 }
-
 #pos_3 p, #pos_4 p {
-    width:250px;
-    height: 30px;
-    margin:auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
     background-color: #afe988;
-    /* Border */
     border-radius:5px;
     border-style: ridge;
     border-color: #5aa240;
+    font-size: 20px;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972239541131948115/unknown.png");
 }
-
 #pos_5 p, #pos_6 p, #pos_7 p, #pos_8 p, #pos_9 p {
-    width:250px;
-    height: 30px;
-    margin:auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
     background-color: #98e99d;
-    /* Border */
     border-radius:5px;
     border-style: ridge;
     border-color: #88a237;
+    font-size: 20px;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972239837652480101/unknown.png?width=1202&height=676");
 }
-
 #pos_10 p{
-    width:250px;
-    height: 30px;
-    margin:auto;
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
     background-color: #e99186;
-    /* Border */
     border-radius:5px;
     border-style: ridge;
     border-color: #a23536;
+    font-size: 20px;
+    background-image: url("https://media.istockphoto.com/vectors/abstract-background-vector-id1139397586?k=20&m=1139397586&s=612x612&w=0&h=pejycwH5cDNGvUqx0K9XAT4cy3dRREmhqXJ1-JJvMas=");
 }

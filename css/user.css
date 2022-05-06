@@ -3,24 +3,24 @@ p{
     font-weight: bold;
 }
 body{
-    background-color: #ebf0f2;
+    background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
 }
 
 #form form{
-    width:400px;
-    padding:16px;
+    width: 400px;
+    padding: 16px;
     border-radius:10px;
-    margin:auto;
-    background-color: #e5e7ee;
+    margin: auto;
+    background-color: #edca8a;
     text-align:center;
     /* Border */
     border-style: ridge;
-    border-color: #bfc4ff;
+    border-color: #a25f38;
 }
 form label{
-    width:72px;
-    font-weight:bold;
-    display:inline-block;
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
 }
 
 #form form input[type="text"],

@@ -2,6 +2,10 @@
         require './Model/connectDB.php';
         $con = connectDB();
 
+        if(isset($_SESSION['gameSyllabary'])){
+            $_SESSION['gameSyllabary'] = "0";
+        }
+
         if( array_key_exists( 'submit_hiragana', $_POST ) )
         {
             $_SESSION['gameSyllabary'] = "Hiragana";

@@ -9,6 +9,7 @@
     $_SESSION['questionTime'] = 10;
     $_SESSION['question'] = 0;
     $_SESSION['questionNum'] = 20;
+    $_SESSION['AnswerNum'] = 4;
     $_SESSION['points'] = 0;
 
     $_SESSION['TempsPregunta'] = 0;

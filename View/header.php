@@ -6,13 +6,13 @@
     <ul>
         <?php  if(isset($_SESSION['User'])){ ?>
             <li>
-                <a href="./index.php?accio=cover">Perfil</a>
+                <a href="./index.php?accio=profile">Perfil</a>
             </li>
-            <li class="desplegable"><a href="?logout">Log out</a>
+            <li class="desplegable"><a href="?logout">Tancar Sessió</a>
                 <?php
                     if (isset($_GET['logout'])) {
                         session_unset();
-                        header('Refresh: 1; URL=index.php');
+                        header('Refresh: 0.1; URL=index.php');
                     } }?>
             </li>
     </ul>

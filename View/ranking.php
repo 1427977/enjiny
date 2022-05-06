@@ -11,7 +11,7 @@
                     <?php for($i=0;$i<10;$i++){ ?>
                         <div id="pos_<?php print_r($i); ?>">
                             <?php if($localRankingSize > $i){ ?>
-                                <b><p><?php print_r($localRanking[$i][3]);?> punts ; <?php print_r($localRanking[$i][4]);?> segons</p></b>
+                                <b><p><?php print_r($localRanking[$i][3]);?> punts ; <?php print_r($localRanking[$i][4]);?> s</p></b>
                             <?php }else{?>
                             <b><p> - - - punts</p></b>
                             <?php }?>
@@ -19,7 +19,7 @@
                     <?php } ?>
                     <?php if($localRankingSize == 10 && $localRanking[9][3] > $_SESSION['points']){ ?>
                         <div id="pos_10">
-                            <b><p><?php print_r($_SESSION['points']);?> punts ; <?php print_r($_SESSION['gameTime']);?> segons</p></b>
+                            <b><p><?php print_r($_SESSION['points']);?> punts ; <?php print_r($_SESSION['gameTime']);?> s</p></b>
                         </div>
                     <?php } ?>
                 </div>
@@ -29,7 +29,7 @@
                     <?php for($i=0;$i<10;$i++){ ?>
                         <div id="pos_<?php print_r($i); ?>">
                             <?php if($GlobalRankingSize > $i){ ?>
-                                <b><p><u><?php print_r($userName[$i]);?></u>: <?php print_r($globalRanking[$i][3]);?> punts ; <?php print_r($globalRanking[$i][4]);?> segons</p></b>
+                                <b><p><u><?php print_r($userName[$i]);?></u>: <?php print_r($globalRanking[$i][3]);?> punts ; <?php print_r($globalRanking[$i][4]);?> s</p></b>
                             <?php }else{?>
                                 <b><p> - - - punts</p></b>
                             <?php }?>

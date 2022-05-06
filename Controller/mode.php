@@ -1,25 +1,25 @@
 <?php
     require './Model/connectDB.php';
     $con = connectDB();
-    /*
     require './Model/game.php';
-    $syllabary2 = loadSyllabary($con, $_SESSION['gameSyllabary']);
-    $syllabary = loadAllSyllabary($con);
 
-    //print_r($syllabary);
-    $check = checkUseryllabary($con, $_SESSION['User']);
-    if($check[0][0] == 0){
-        foreach ($syllabary as $ideogram):
-            if($ideogram[5] < 2){
-                saveSyllabary($con, $_SESSION['User'], $ideogram[0], 0, 1);
-            }else{
-                saveSyllabary($con, $_SESSION['User'], $ideogram[0], 0, 0);
-            }
-        endforeach;
+    if(isset($_SESSION['gameMode'])){
+        $_SESSION['gameMode'] = "0";
     }
-    */
-    /* COMPROBACIÓ!!!!!!!!!!!!!!!!! */
 
+    if($_SESSION["gameSyllabary"] == "Hiragana"){
+        $_SESSION["average"] = (calculateAvgHiragana($con, $_SESSION['User'])[0][0]/5)*100;
+    }
+
+    if($_SESSION["gameSyllabary"] == "Katakana"){
+        $_SESSION["average"] = (calculateAvgKatakana($con, $_SESSION['User'])[0][0]/5)*100;
+    }
+
+   /* if($_SESSION["gameSyllabary"] == "Kanji"){
+
+    }
+*/
+    /* Comprobació */
     if( array_key_exists( 'submit_classic', $_POST ) )
     {
         $_SESSION['gameMode'] = "Classic";

@@ -12,13 +12,13 @@
         };
     </script>
     <body>
-        <section id="pantalla_game">
+        <section id = "pantalla_game">
             <br/>
             <div id="header">
-                <div id="points">
+                <div id = "points">
                     <?php print_r($_SESSION['points']);print_r("p "); ?>
                 </div>
-                <div id="questions">
+                <div id = "questions">
                     <?php print_r($_SESSION['question']);echo("/");print_r($_SESSION['questionNum']); ?>
                 </div>
             </div>
@@ -31,46 +31,48 @@
                 shuffle($values);
             ?>
 
-            <div id="EleccióJP">
-                <p><?php if($_SESSION['gameType'] == "EleccióJP"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Ideogram"]); ?></p>
+            <div id = "EleccióJP">
+                <div id = "title_game"><?php if($_SESSION['gameType'] == "EleccióJP"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Ideogram"]); ?></div>
                 <form action="./index.php?accio=game" target="_self" method="post" name="joc">
-                    <input id='submit_button1'    type='submit' name = 'submit_button1'    value = '<?php echo($syllabary[$values[0]]["Romaji"]);?>' />
-                    <input id='submit_button2'    type='submit' name = 'submit_button2'    value = '<?php echo($syllabary[$values[1]]["Romaji"]);?>' />
-                    <input id='submit_button3'    type='submit' name = 'submit_button3'    value = '<?php echo($syllabary[$values[2]]["Romaji"]);?>' />
-                    <input id='submit_button4'    type='submit' name = 'submit_button4'    value = '<?php echo($syllabary[$values[3]]["Romaji"]);?>' />
-                    <input id='submit_hidden'    type='hidden' name = 'submit_hidden'    value = '<?php echo($syllabary[$_SESSION["randomNumber1"]]["Romaji"]);?>' />
-                    <input id='submit_random'    type='hidden' name = 'submit_random'    value = '<?php echo($_SESSION["randomNumber1"]);?>' />
+                    <div id = "form_game">
+                        <?php for($i=1; $i<$_SESSION['AnswerNum']+1; $i++){ ?>
+                            <div class = "submit_button<?php print_r($i); ?>"><input id='submit_button<?php print_r($i); ?>' type='submit' name = 'submit_button<?php print_r($i); ?>' value = '<?php echo($syllabary[$values[$i-1]]["Romaji"]);?>' /></div>
+                        <?php } ?>
+                        <input id='submit_hidden'    type='hidden' name = 'submit_hidden'    value = '<?php echo($syllabary[$_SESSION["randomNumber1"]]["Romaji"]);?>' />
+                        <input id='submit_random'    type='hidden' name = 'submit_random'    value = '<?php echo($_SESSION["randomNumber1"]);?>' />
+                    </div>
                 </form>
                 <?php } ?>
             </div>
 
-            <div id="EleccióRM">
-                <p><?php if($_SESSION['gameType'] == "EleccióRM"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Romaji"]); ?></p>
-                    <form action="./index.php?accio=game" target="_self" method="post">
-                        <input id='submit_button1'    type='submit' name = 'submit_button1'    value = '<?php echo($syllabary[$values[0]]["Ideogram"]);?>' />
-                        <input id='submit_button2'    type='submit' name = 'submit_button2'    value = '<?php echo($syllabary[$values[1]]["Ideogram"]);?>' />
-                        <input id='submit_button3'    type='submit' name = 'submit_button3'    value = '<?php echo($syllabary[$values[2]]["Ideogram"]);?>' />
-                        <input id='submit_button4'    type='submit' name = 'submit_button4'    value = '<?php echo($syllabary[$values[3]]["Ideogram"]);?>' />
+            <div id = "EleccióJP">
+                <div id = "title_game"><?php if($_SESSION['gameType'] == "EleccióJP"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Romaji"]); ?></div>
+                <form action="./index.php?accio=game" target="_self" method="post" name="joc">
+                    <div id = "form_game">
+                        <?php for($i=1; $i<$_SESSION['AnswerNum']+1; $i++){ ?>
+                            <div class = "submit_button<?php print_r($i); ?>"><input id='submit_button<?php print_r($i); ?>' type='submit' name = 'submit_button<?php print_r($i); ?>' value = '<?php echo($syllabary[$values[$i-1]]["Ideogram"]);?>' /></div>
+                        <?php } ?>
                         <input id='submit_hidden'    type='hidden' name = 'submit_hidden'    value = '<?php echo($syllabary[$_SESSION["randomNumber1"]]["Ideogram"]);?>' />
                         <input id='submit_random'    type='hidden' name = 'submit_random'    value = '<?php echo($_SESSION["randomNumber1"]);?>' />
-                    </form>
+                    </div>
+                </form>
                 <?php } ?>
             </div>
 
-            <div id="TeclatJP">
-                <p><?php if($_SESSION['gameType'] == "TeclatJP"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Ideogram"]); ?></p>
+            <div id = "TeclatJP">
+                <div id = "title_game"><?php if($_SESSION['gameType'] == "TeclatJP"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Ideogram"]); ?></div>
                     <form action="./index.php?accio=game" target="_self" method="post">
-                        <input type="text" maxlength="25" name="teclat" required >
+                        <input type="text" maxlength="5" name="teclat" required >
                         <input id='submit_hidden'    type='hidden' name = 'submit_hidden'    value = '<?php echo($syllabary[$_SESSION["randomNumber1"]]["Romaji"]);?>' />
                         <input id='submit_random'    type='hidden' name = 'submit_random'    value = '<?php echo($_SESSION["randomNumber1"]);?>' />
                     </form>
                 <?php } ?>
             </div>
 
-            <div id="TeclatRM">
-                <p><?php if($_SESSION['gameType'] == "TeclatRM"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Romaji"]); ?></p>
+            <div id = "TeclatRM">
+                <div id = "title_game"><?php if($_SESSION['gameType'] == "TeclatRM"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Romaji"]); ?></div>
                     <form action="./index.php?accio=game" target="_self" method="post">
-                        <input type="text" maxlength="25" name="teclat" required >
+                        <input type="text" maxlength="5" name="teclat" required >
                         <input id='submit_hidden'    type='hidden' name = 'submit_hidden'    value = '<?php echo($syllabary[$_SESSION["randomNumber1"]]["Ideogram"]);?>' />
                         <input id='submit_random'    type='hidden' name = 'submit_random'    value = '<?php echo($_SESSION["randomNumber1"]);?>' />
                     </form>
