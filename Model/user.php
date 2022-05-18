@@ -45,3 +45,18 @@
         $consulta->execute();
         return($consulta->fetchAll());
     }
+
+    function getUser($con, $userId)
+    {
+        $sql = 'SELECT * FROM `user` WHERE `ID` = "'.$userId.'" ';
+        $consulta = $con->prepare($sql);
+        $consulta->execute();
+        return($consulta->fetchAll());
+    }
+
+    function updateSelected($con, $selected, $userId, $syllabaryId)
+    {
+        $sql = 'UPDATE `learning` SET `Selected` = "'.$selected.'" WHERE idIdeogram = "'.$syllabaryId.'" AND idUser = "'.$userId.'"';
+        $consulta = $con->prepare($sql);
+        $consulta->execute();
+    }

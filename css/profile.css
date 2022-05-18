@@ -1,3 +1,602 @@
+/* ------------------------------------------------------------ */
+/* -------------------------- HEADER -------------------------- */
+/* ------------------------------------------------------------ */
+
+#profile_header{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+#profile_header a{
+    background-color: #edad67;
+    color: black;
+    border: 2px solid #806332;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+#profile_header a:hover {
+    background-color: #cb935c;
+}
+.profile_dropdown_button {
+    background-color: #edad67;
+    color: black;
+    border: 2px solid #806332;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.profile_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile_dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.profile_dropdown_content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile_dropdown_content a:hover {background-color: #f1f1f1}
+
+.profile_dropdown:hover .profile_dropdown_content {
+    display: block;
+}
+
+.profile_dropdown:hover .profile_dropdown_button {
+    background-color: #cb935c;
+}
+
+/* ------------------------------------------------------------ */
+/* -------------------------- PROFILE ------------------------- */
+/* ------------------------------------------------------------ */
 body{
     background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
 }
+
+#profile_modify form{
+    width: 400px;
+    padding: 16px;
+    margin: auto;
+    background-color: #edca8a;
+    text-align:center;
+    border-style: ridge;
+    border-color: #a25f38;
+    border-radius:10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+form label{
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#profile_modify form input[type="text"],
+#profile_modify form input[type="password"],
+#profile_modify form input[type="email"]{
+    width:180px;
+    padding:3px 10px;
+    border:1px solid #000000;
+    border-radius:3px;
+    margin:8px 0;
+    display:inline-block;
+    background-color: #f7fffc;
+}
+#profile_modify form input:hover{
+    background-color: #edefff;
+}
+
+#profile_modify form input[type="reset"],
+#profile_modify form input[type="submit"]{
+    width:100%;
+    padding:8px 16px;
+    margin-top:32px;
+    border:1px solid #000;
+    border-radius:5px;
+    display:block;
+    color:#fff;
+    background-color:#000;
+}
+
+#profile_modify form input[type="reset"]:hover,
+#profile_modify form input[type="submit"]:hover{
+    cursor:pointer;
+    background-color: #292929;
+}
+
+#profile_information{
+    width: 430px;
+    height: 200px;
+    margin:auto;
+    background-color: #edca8a;
+    text-align:center;
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #a25f38;
+    font-size: 25px;
+}
+
+
+/* ------------------------------------------------------------ */
+/* ------------------------- LEARNING ------------------------- */
+/* ------------------------------------------------------------ */
+
+
+#profile_learning{
+    width: 650px;
+    height: 5300px;
+    margin: auto;
+    background-color: #edca8a;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: #a25f38;
+    text-align:center;
+}
+
+.table_learning th{
+    background-color: #a56034;
+    width: 110px;
+    height: 110px;
+    font-size: 30px;
+}
+.table_learning th, td {
+    border: 1px solid;
+}
+.table_learning {
+    font-size: 20px;
+}
+.table_learning span{
+    font-size: 50px;
+}
+
+#learning_-1 {
+    background-color: #d7d7d7;
+}
+#learning_0 {
+    background-color: #ff523a;
+}
+#learning_1 {
+    background-color: #ff8d77;
+}
+#learning_2 {
+    background-color: #ffe968;
+}
+#learning_3 {
+    background-color: #c6f353;
+}
+#learning_4 {
+    background-color: #73ed6e;
+}
+#learning_5 {
+    background-color: #3ea658;
+}
+
+#profile_learning_title {
+    font-size: 40px;
+}
+
+#profile_learning_header{
+    font-size: 50px;
+}
+#profile_learning_percent{
+    font-size:20px;
+}
+
+.barra {
+    margin-right: 10%;
+    margin-left: 10%;
+    height: 5px;
+    position: relative;
+    background: #dea96a;
+    border-radius: 30px;
+    padding: 5px;
+}
+.barra > span {
+    display: block;
+    height: 90%;
+    background-color: #4f7b0b;
+    position: relative;
+    overflow: hidden;
+    animation: prog 3s linear;
+}
+@keyframes prog {
+    0% {width: 0%}
+    60% {width: 100%}
+}
+
+/*
+#switch_check_all {
+    position: absolute;
+    top: 0;
+    display: block;
+}
+
+#switch_uncheck_all{
+
+    display: none;
+}
+*/
+/* BARRA */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* BOLA */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 5px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------ */
+/* -------------------------- RANKING ------------------------- */
+/* ------------------------------------------------------------ */
+
+.profile_ranking{
+    margin-right: 25%;
+    margin-left: 25%;
+    height: 11500px;
+    text-align:center;
+    border-radius:10px;
+    border-style: ridge;
+    border-color: #a25f38;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972185350065750086/unknown.png?width=676&height=676");
+    display: grid;
+    grid-template-areas: 'prt prt'
+                        'prm0 prm0'
+                        'prt0 prt0' 'lr0 gl0'
+                        'prt1 prt1' 'lr1 gl1'
+                        'prt2 prt2' 'lr2 gl2'
+                        'prt3 prt3' 'lr3 gl3'
+                        'prm1 prm1'
+                        'prt4 prt4' 'lr4 gl4'
+                        'prt5 prt5' 'lr5 gl5'
+                        'prt6 prt6' 'lr6 gl6'
+                        'prt7 prt7' 'lr7 gl7'
+                        'prm2 prm2'
+                        'prt8 prt8' 'lr8 gl8'
+                        'prt9 prt9' 'lr9 gl9'
+                        'prt10 prt10' 'lr10 gl10'
+                        'prt11 prt11' 'lr11 gl11'
+                        'prm3 prm3'
+                        'prt12 prt12' 'lr12 gl12'
+                        'prt13 prt13' 'lr13 gl13'
+                        'prt14 prt14' 'lr14 gl14'
+                        'prt15 prt15' 'lr15 gl15';
+}
+
+.profile_ranking h1{
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: #ffd487ff;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a25f38;
+    font-size: 30px;
+    background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
+}
+
+.profile_ranking h3, .profile_ranking h3{
+    margin-right: 0%;
+    margin-left: 23%;
+    width: 250px;
+    height: 30px;
+    background-color: #ffd487ff;
+    border-style: ridge;
+    border-color: #a25f38;
+    font-size: 25px;
+    background-image: url("https://cdn.discordapp.com/attachments/955960985242451969/971468778791665674/enjiny_fons.png");
+}
+
+/* Grid Area*/
+
+.profile_ranking_title{
+    grid-area: prt;
+}
+.profile_ranking_mode_0{
+    grid-area: prm0;
+}
+.profile_ranking_title_0{
+    grid-area: prt0;
+}
+.profile_ranking_title_1{
+    grid-area: prt1;
+}
+.profile_ranking_title_2{
+    grid-area: prt2;
+}
+.profile_ranking_title_3{
+    grid-area: prt3;
+}
+.local_ranking_0{
+    grid-area: lr0;
+}
+.global_ranking_0{
+    grid-area: gl0;
+}
+.local_ranking_1{
+    grid-area: lr1;
+}
+.global_ranking_1{
+    grid-area: gl1;
+}
+.local_ranking_2{
+    grid-area: lr2;
+}
+.global_ranking_2{
+    grid-area: gl2;
+}
+.local_ranking_3{
+    grid-area: lr3;
+}
+.global_ranking_3{
+    grid-area: gl3;
+}
+/* PART 2*/
+.profile_ranking_mode_1{
+    grid-area: prm1;
+}
+.profile_ranking_title_4{
+    grid-area: prt4;
+}
+.profile_ranking_title_5{
+    grid-area: prt5;
+}
+.profile_ranking_title_6{
+    grid-area: prt6;
+}
+.profile_ranking_title_7{
+    grid-area: prt7;
+}
+.local_ranking_4{
+    grid-area: lr4;
+}
+.global_ranking_4{
+    grid-area: gl4;
+}
+.local_ranking_5{
+    grid-area: lr5;
+}
+.global_ranking_5{
+    grid-area: gl5;
+}
+.local_ranking_6{
+    grid-area: lr6;
+}
+.global_ranking_6{
+    grid-area: gl6;
+}
+.local_ranking_7{
+    grid-area: lr7;
+}
+.global_ranking_7{
+    grid-area: gl7;
+}
+/* PART 3*/
+.profile_ranking_mode_2{
+    grid-area: prm2;
+}
+.profile_ranking_title_8{
+    grid-area: prt8;
+}
+.profile_ranking_title_9{
+    grid-area: prt9;
+}
+.profile_ranking_title_10{
+    grid-area: prt10;
+}
+.profile_ranking_title_11{
+    grid-area: prt11;
+}
+.local_ranking_8{
+    grid-area: lr8;
+}
+.global_ranking_8{
+    grid-area: gl8;
+}
+.local_ranking_9{
+    grid-area: lr9;
+}
+.global_ranking_9{
+    grid-area: gl9;
+}
+.local_ranking_10{
+    grid-area: lr10;
+}
+.global_ranking_10{
+    grid-area: gl10;
+}
+.local_ranking_11{
+    grid-area: lr11;
+}
+.global_ranking_11{
+    grid-area: gl11;
+}
+/* PART 4*/
+.profile_ranking_mode_3{
+    grid-area: prm3;
+}
+.profile_ranking_title_12{
+    grid-area: prt12;
+}
+.profile_ranking_title_13{
+    grid-area: prt13;
+}
+.profile_ranking_title_14{
+    grid-area: prt14;
+}
+.profile_ranking_title_15{
+    grid-area: prt15;
+}
+.local_ranking_12{
+    grid-area: lr12;
+}
+.global_ranking_12{
+    grid-area: gl12;
+}
+.local_ranking_13{
+    grid-area: lr13;
+}
+.global_ranking_13{
+    grid-area: gl13;
+}
+.local_ranking_14{
+    grid-area: lr14;
+}
+.global_ranking_14{
+    grid-area: gl14;
+}
+.local_ranking_15{
+    grid-area: lr15;
+}
+.global_ranking_15{
+    grid-area: gl15;
+}
+
+/* Fi Grid Area*/
+
+#pos_0 p {
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
+    background-color: #e0e192;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #c8bf34;
+    font-size: 20px;
+    background-image: url("https://img.freepik.com/free-photo/gold-metal-brushed-background_38679-1030.jpg?w=2000");
+}
+#pos_1 p {
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
+    background-color: #c3c8cd;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a8a7a4;
+    font-size: 20px;
+    background-image: url("https://ae01.alicdn.com/kf/HTB12ijKdNWYBuNjy1zkq6xGGpXav/Fondos-fotogr-ficos-Bokeh-para-ni-os-y-beb-s-con-destellos-plateados-de-vinilo-para.jpg_Q90.jpg_.webp");
+}
+#pos_2 p {
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
+    background-color: #e9ab62;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a27545;
+    font-size: 20px;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972239638142001273/unknown.png");
+}
+#pos_3 p, #pos_4 p {
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
+    background-color: #afe988;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #5aa240;
+    font-size: 20px;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972239541131948115/unknown.png");
+}
+#pos_5 p, #pos_6 p, #pos_7 p, #pos_8 p, #pos_9 p {
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
+    background-color: #98e99d;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #88a237;
+    font-size: 20px;
+    background-image: url("https://media.discordapp.net/attachments/955960985242451969/972239837652480101/unknown.png?width=1202&height=676");
+}
+#pos_10 p{
+    margin-right: 15%;
+    margin-left: 15%;
+    height: 25px;
+    background-color: #e99186;
+    border-radius:5px;
+    border-style: ridge;
+    border-color: #a23536;
+    font-size: 20px;
+    background-image: url("https://media.istockphoto.com/vectors/abstract-background-vector-id1139397586?k=20&m=1139397586&s=612x612&w=0&h=pejycwH5cDNGvUqx0K9XAT4cy3dRREmhqXJ1-JJvMas=");
+}
+
+
+
+
+

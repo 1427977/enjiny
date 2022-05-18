@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb0a14d4-0faa-468d-82a6-24da4a1e7530" name="Default Changelist" comment="" />
+    <list default="true" id="eb0a14d4-0faa-468d-82a6-24da4a1e7530" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/funcions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/funcions.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +60,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\enjiny\Controller" />
       <recent name="C:\xampp\htdocs\enjiny\js" />
     </key>
   </component>
@@ -107,7 +117,14 @@
       <workItem from="1651749542193" duration="2607000" />
       <workItem from="1651754528100" duration="1260000" />
       <workItem from="1651783614975" duration="327000" />
-      <workItem from="1651833084367" duration="28638000" />
+      <workItem from="1651833084367" duration="34078000" />
+      <workItem from="1651939867174" duration="16565000" />
+      <workItem from="1652005682984" duration="34570000" />
+      <workItem from="1652130154975" duration="2438000" />
+      <workItem from="1652280205447" duration="10138000" />
+      <workItem from="1652341803277" duration="1427000" />
+      <workItem from="1652708942363" duration="748000" />
+      <workItem from="1652880370348" duration="595000" />
     </task>
     <servers />
   </component>

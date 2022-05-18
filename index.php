@@ -52,6 +52,36 @@ switch($action) {
         include __DIR__.'/resourceProfile.php';
         break;
 
+    case 'learningHiragana':
+        $_SESSION["learning"] = "Hiragana";
+        include __DIR__.'/resourceLearning.php';
+        break;
+
+    case 'learningKatakana':
+        $_SESSION["learning"] = "Katakana";
+        include __DIR__.'/resourceLearning.php';
+        break;
+
+    case 'learningKanji':
+        $_SESSION["learning"] = "Kanji";
+        include __DIR__.'/resourceLearning.php';
+        break;
+
+    case 'profileRankingHiragana':
+        $_SESSION["viewRanking"] = "Hiragana";
+        include __DIR__.'/resourceProfileRanking.php';
+        break;
+
+    case 'profileRankingKatakana':
+        $_SESSION["viewRanking"] = "Katakana";
+        include __DIR__.'/resourceProfileRanking.php';
+        break;
+
+    case 'profileRankingKanji':
+        $_SESSION["viewRanking"] = "Kanji";
+        include __DIR__.'/resourceProfileRanking.php';
+        break;
+
     default:
         include __DIR__. '/resourceCover.php';
         break;

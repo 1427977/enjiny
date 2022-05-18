@@ -45,8 +45,8 @@
                 <?php } ?>
             </div>
 
-            <div id = "EleccióJP">
-                <div id = "title_game"><?php if($_SESSION['gameType'] == "EleccióJP"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Romaji"]); ?></div>
+            <div id = "EleccióRM">
+                <div id = "title_game"><?php if($_SESSION['gameType'] == "EleccióRM"){ print_r($syllabary[$_SESSION["randomNumber1"]]["Romaji"]); ?></div>
                 <form action="./index.php?accio=game" target="_self" method="post" name="joc">
                     <div id = "form_game">
                         <?php for($i=1; $i<$_SESSION['AnswerNum']+1; $i++){ ?>
